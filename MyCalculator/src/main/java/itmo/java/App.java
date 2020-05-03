@@ -60,6 +60,11 @@ class Calculator {
             case '/':
                 result = Actions.division(number1, number2);
                 break;
+            case '$':
+                result = (int) Actions.root(number1, number2);
+                break;
+            case '^':
+                result = (int) Actions.power(number1, number2);
             default:
                 result = 0;
                 break;
@@ -110,6 +115,20 @@ class Actions {
             return 0;
         }
         return a / b;
+    }
+
+    /**
+     * 
+     * @param a число 
+     * @param b степенной корень
+     * @return корень степени b от a
+     */
+    static double root(final int a, final int b) {
+        return Math.pow(a, 1 / b);
+    }
+
+    static double power(final int a, final int b) {
+        return Math.pow(a, b);
     }
 }
 
