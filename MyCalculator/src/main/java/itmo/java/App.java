@@ -111,6 +111,16 @@ class Actions {
         }
         return a / b;
     }
+
+    /**
+     * 
+     * @param a число 
+     * @param b степенной корень
+     * @return корень степени b от a
+     */
+    static double root(final int a, final int b) {
+        return Math.pow(a, 1 / b);
+    }
 }
 
 //FiraCode: <= >= == !=
