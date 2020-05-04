@@ -65,6 +65,10 @@ class Calculator {
                 break;
             case '^':
                 result = (int) Actions.power(number1, number2);
+                break;
+            case '&':
+                result = (int) Actions.squareOfSum(number1, number2);
+                break;
             default:
                 result = 0;
                 break;
@@ -127,9 +131,25 @@ class Actions {
         return Math.pow(a, 1 / b);
     }
 
+    /**
+     * 
+     * @param a основание
+     * @param b степень
+     * @return a в степени b
+     */
     static double power(final int a, final int b) {
         return Math.pow(a, b);
     }
+    /**
+     * 
+     * @param a 1 число
+     * @param b 2 число
+     * @return квадрат суммы
+     */
+    static double squareOfSum( final int a, final int b) {
+        return Math.pow(a + b, 2);
+    }
+
 }
 
 //FiraCode: <= >= == !=
