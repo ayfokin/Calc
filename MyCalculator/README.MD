@@ -1,0 +1,1 @@
+Simpliest calculator with base functions
