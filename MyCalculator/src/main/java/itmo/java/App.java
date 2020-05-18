@@ -122,6 +122,7 @@ class Actions {
             return 0;
         }
         return a / b;
+        // comment
     }
 
     /**
